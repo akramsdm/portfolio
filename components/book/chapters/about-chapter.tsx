@@ -16,10 +16,10 @@ export function AboutChapter() {
   const [views, setViews] = useState<number | null>(null)
 
   useEffect(() => {
-  fetch('https://countapi.mileshilliard.com/hit/akramsdm.dev/about')
-    .then(r => r.json())
-    .then(d => setViews(d.value))
-    .catch(() => setViews(null))
+fetch('https://countapi.mileshilliard.com/api/v1/hit/akramsdm.dev')
+  .then(r => r.json())
+  .then(d => setViews(Number(d.value)))
+  .catch(() => setViews(null))
 }, [])
 
 
