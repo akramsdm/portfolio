@@ -1,4 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://yourdomain.com/sitemap.xml
-# Replace https://yourdomain.com with your real domain
+Sitemap: https://akramsdm.dev/sitemap.xml
